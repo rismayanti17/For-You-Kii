@@ -1,0 +1,68 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.sky {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #87CEEB; /* Warna langit cerah */
+  transition: background-color 1s ease;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+  color: white;
+}
+
+.sun, .moon {
+  position: absolute;
+  top: -100px; /* Posisi awal di luar layar atas */
+  left: -100px; /* Posisi awal di luar layar kiri */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.sun {
+  background-color: yellow; /* Warna matahari */
+}
+
+.moon {
+  background-color: #d3d3d3; /* Warna bulan */
+}
+
+.tree {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.dark-sky-text {
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 48px; /* Atur ukuran teks sesuai kebutuhan */
+  color: white;
+}
+
+.tree-text {
+  position: absolute;
+  bottom: 100px;
+  right: 70px;
+  width: 300px; /* Sesuaikan lebar teks sesuai kebutuhan */
+  height: auto; /* Biarkan tinggi teks menyesuaikan isi */
+  font-size: 24px;
+  color: rgb(228, 228, 37);
+  white-space: normal; /* Pastikan teks dapat memanjang ke bawah jika dibutuhkan */
+}
+
